@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.gradient {
+    background-image: linear-gradient(to right top, #6d327c, #485DA6, #00a1ba, #00BF98, #36C486);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.landing {
+    width: 100vw;
+    height: 100vh;
+}

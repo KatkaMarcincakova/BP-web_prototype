@@ -1,0 +1,24 @@
+{
+    "name": "bp-web_prototype",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "build": "tailwindcss -i ./src/input.css -o ./css/main.css",
+        "watch": "tailwindcss -i ./src/input.css -o ./css/main.css --watch"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/KatkaMarcincakova/BP-web_prototype.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/KatkaMarcincakova/BP-web_prototype/issues"
+    },
+    "homepage": "https://github.com/KatkaMarcincakova/BP-web_prototype#readme",
+    "devDependencies": {
+        "tailwindcss": "^3.2.4"
+    }
+}
