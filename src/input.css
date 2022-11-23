@@ -35,6 +35,10 @@ body {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
+.card:hover {
+    background-color: var(--darkBlueHover);
+}
+
 .card-body {
     margin: 0.8rem;
 }
