@@ -7,6 +7,12 @@
     --mainBlue: hsl(188, 100%, 36%);
     --darkBlue: hsl(189, 100%, 15%);
     --darkBlueHover: hsl(189, 100%, 10%);
+    --goldBg: hsl(45, 100%, 65%);
+    --goldMain: hsl(45, 100%, 50%);
+    --bronzeMain: hsl(30, 50%, 50%);
+    --bronzeBg: hsl(30, 50%, 60%);
+    --silverMain: hsl(0, 0%, 50%);
+    --silverBg: hsl(0, 0%, 60%);
 }
 
 html,
@@ -41,6 +47,16 @@ body {
 
 .card-body {
     margin: 0.8rem;
+}
+
+.leaderboard {
+    border: 0;
+    border-radius: 15px;
+    padding: 0.7rem;
+}
+
+.shadow {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .title {
@@ -94,4 +110,24 @@ body {
     .landing-icons {
         font-size: 2em;
     }
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+h3 {
+    font-size: 1.17em;
+}
+
+h5 {
+    font-size: .83em;
+}
+
+h6 {
+    font-size: .75em;
 }
