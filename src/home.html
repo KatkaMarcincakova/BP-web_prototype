@@ -10,11 +10,99 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/471d17c5c6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
     <title>Hi-Fi Ralley - Home</title>
 </head>
 
 <body>
+    <div class="w-60 h-[100vh] bg-mainBlue text-white hidden lg:block">
+        <div class="w-100 flex flex-row justify-center p-2 pt-4">
+            <div class="shrink-0">
+                <img src="https://mdbcdn.b-cdn.net/img/new/avatars/8.webp" class="rounded-full w-28" alt="Avatar">
+            </div>
+        </div>
+        <h3 class="w-full text-center font-bold mt-2 px-2">John Doe</h3>
+        <div class="w-full flex flex-row justify-center mt-4">
+            <button id="HomeBtn" onclick="makeActive('#HomeBtn', '')" class="navbuttons w-[90%] transition duration-200 px-5 py-4 cursor-pointer font-normal text-base rounded-lg text-white hover:bg-mainPurple">
+                <div class="w-full flex flex-row justify-start items-stretch">
+                    <span class="material-symbols-rounded self-center">home</span>
+                    <h3 class="ml-1 self-center">Home</h3>
+                </div>
+            </button>
+        </div>
+        <div class="w-full flex flex-row justify-center mt-2">
+            <button id="HiFiBtn" onclick="makeActive('#HiFiBtn', '')" class="navbuttons w-[90%] transition duration-200 px-5 py-4 cursor-pointer font-normal text-base rounded-lg text-white hover:bg-mainPurple">
+                <div class="w-full flex flex-row justify-start items-stretch">
+                    <span class="material-symbols-rounded self-center">directions_run</span>
+                    <h3 class="ml-1 self-center">Hi-Fi Ralley</h3>
+                </div>
+            </button>
+        </div>
+        <div class="w-full flex flex-row justify-center mt-2">
+            <button id="PeopleBtn" onclick="makeActive('#PeopleBtn', '')" class="navbuttons w-[90%] transition duration-200 px-5 py-4 cursor-pointer font-normal text-base rounded-lg text-white hover:bg-mainPurple">
+                <div class="w-full flex flex-row justify-start items-stretch">
+                    <span class="material-symbols-rounded self-center">group</span>
+                    <h3 class="ml-1 self-center">Účastníci</h3>
+                </div>
+            </button>
+        </div>
+        <div class="w-full flex flex-row justify-center mt-2">
+            <button id="SettingsBtn" onclick="makeActive('#SettingsBtn', '')" class="navbuttons w-[90%] transition duration-200 px-5 py-4 cursor-pointer font-normal text-base rounded-lg text-white hover:bg-mainPurple">
+                <div class="w-full flex flex-row justify-start items-stretch">
+                    <span class="material-symbols-rounded self-center">settings</span>
+                    <h3 class="ml-1 self-center">Nastavenia</h3>
+                </div>
+            </button>
+        </div>
+        <div class="w-full flex flex-row justify-center mt-2">
+            <button id="LogoutBtn" onclick="makeActive('#LogoutBtn', 'login.html')" class="navbuttons w-[90%] transition duration-200 px-5 py-4 cursor-pointer font-normal text-base rounded-lg text-white hover:bg-mainPurple">
+                <div class="w-full flex flex-row justify-start items-stretch">
+                    <span class="material-symbols-rounded self-center">logout</span>
+                    <h3 class="ml-1 self-center">Odhlásiť</h3>
+                </div>
+            </button>
+        </div>
+    </div>
 
+    <div class="w-100 bg-mainBlue text-white block lg:hidden py-2 px-4">
+        <div class="w-100 flex flex-row justify-between">
+            <button class="transition duration-200 cursor-pointer font-normal text-sm rounded-lg text-gray-300 hover:text-black ">
+                <img src="../images/LSTME_logo_white.svg" class="w-10" alt="LSTME logo">
+            </button>
+            <div class="flex flex-row">
+                <div class="shrink-0">
+                    <img src="https://mdbcdn.b-cdn.net/img/new/avatars/8.webp" class="rounded-full w-8" alt="Avatar">
+                </div>
+                <button type="button" data-bs-toggle="modal" data-bs-target="#menu" class="transition duration-200 cursor-pointer font-normal text-sm rounded-lg text-gray-300 hover:text-black ">
+                    <span class="material-symbols-rounded">menu</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal menu -->
+    <div class="modal fade fixed top-0 left-0 hidden w-full h-full outline-none overflow-x-hidden overflow-y-auto" id="menu" tabindex="-1" aria-labelledby="menuLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable relative w-auto pointer-events-none">
+            <div class="modal-content border-none shadow-lg relative flex flex-col w-full pointer-events-auto bg-white bg-clip-padding rounded-b-md outline-none text-current">
+                <div class="modal-header flex flex-shrink-0 items-center justify-between p-4 border-b border-gray-200 rounded-t-md">
+                    <h5 class="text-xl font-medium leading-normal text-gray-800" id="menuLabel">
+                        Menu
+                    </h5>
+                    <button type="button" class="btn-close box-content text-xl w-4 h-full p-1 font-black text-black border-none rounded-none opacity-50 focus:shadow-none focus:outline-none focus:opacity-100 hover:text-black hover:opacity-75 hover:no-underline" data-bs-dismiss="modal"
+                        aria-label="Close">X</button>
+                </div>
+                <div class="modal-body relative p-4">
+                    <p>This is some placeholder content to show the scrolling behavior for modals. We use repeated line breaks to demonstrate how content can exceed minimum inner height, thereby showing inner scrolling. When content becomes longer than the
+                        predefined max-height of modal, content will be cropped and scrollable within the modal.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="../node_modules/tw-elements/dist/js/index.min.js"></script>
+    <script src="script.js"></script>
+    <script src="header.js"></script>
 </body>
 
 </html>
