@@ -27,7 +27,11 @@ module.exports = {
                 bronzeBg: 'hsl(30, 50%, 60%)',
                 silverMain: 'hsl(0, 0%, 50%)',
                 silverBg: 'hsl(0, 0%, 60%)',
-                cardDefault: 'hsl(0, 0%, 85%)'
+                cardDefault: 'hsl(0, 0%, 85%)',
+                yellow: 'hsl(51, 95%, 49%)',
+                orange: 'hsl(21, 100%, 55%)',
+                blue: 'hsl(183, 100%, 35%)',
+                mint: 'hsl(171, 26%, 66%)'
             }
         },
     },
