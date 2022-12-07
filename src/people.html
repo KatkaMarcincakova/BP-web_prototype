@@ -74,7 +74,7 @@
                     <div class="shrink-0">
                         <img src="https://mdbcdn.b-cdn.net/img/new/avatars/8.webp" class="rounded-full w-8" alt="Avatar">
                     </div>
-                    <button type="button" data-bs-toggle="modal" data-bs-target="#menu" class="ml-3 flex flex-row items-center transition duration-200 cursor-pointer font-normal text-sm rounded-lg text-gray-300 hover:text-black ">
+                    <button type="button" onclick="MakeVisible('#menu')" class="ml-3 flex flex-row items-center transition duration-200 cursor-pointer font-normal text-sm rounded-lg text-gray-300 hover:text-black ">
                         <span class="material-symbols-rounded">menu</span>
                     </button>
                 </div>
@@ -158,13 +158,12 @@
     </div>
 
     <!-- Modal menu -->
-    <div class="modal fade fixed top-0 left-0 hidden w-full h-full outline-none overflow-x-hidden overflow-y-auto" id="menu" tabindex="-1" aria-labelledby="menuLabel" aria-hidden="true">
+    <div class="modal fade fixed top-0 left-0 hidden w-full h-full outline-none overflow-x-hidden overflow-y-auto" id="menu">
         <div class="modal-dialog modal-dialog-scrollable relative w-auto pointer-events-none">
             <div class="modal-content border-none shadow-lg relative flex flex-col w-full pointer-events-auto bg-white bg-clip-padding rounded-b-md outline-none text-current">
                 <div class="modal-body relative">
                     <div class="flex flex-row justify-end p-4">
-                        <button type="button" class="btn-close box-content text-xl w-4 h-full p-1 font-black text-black border-none rounded-none opacity-50 focus:shadow-none focus:outline-none focus:opacity-100 hover:text-black hover:opacity-75 hover:no-underline" data-bs-dismiss="modal"
-                            aria-label="Close">X</button>
+                        <button type="button" onclick="MakeHidden('#menu')" class="btn-close box-content text-xl w-4 h-full p-1 font-black text-black border-none rounded-none opacity-50 focus:shadow-none focus:outline-none focus:opacity-100 hover:text-black hover:opacity-75 hover:no-underline">X</button>
                     </div>
                     <button onclick="location.href='home.html'" class="w-full px-5 py-4 text-darkBlue">
                         <div class="w-full flex flex-row justify-end items-stretch">

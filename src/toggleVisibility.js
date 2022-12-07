@@ -5,3 +5,13 @@ function ToggleVisibility(elementToHide, elementToShow) {
 
     $(elementToHide).addClass('hidden');
 }
+
+function MakeVisible(id) {
+    if ($(id).hasClass('hidden')) {
+        $(id).removeClass('hidden');
+    }
+}
+
+function MakeHidden(id) {
+    $(id).addClass('hidden');
+}
