@@ -82,30 +82,12 @@
         </div>
 
         <div class="w-full p-4">
-            <h1 class="text-orange font-bold">Nastavenia</h1>
-            <div class="flex flex-col space-y-4 mt-2 w-full max-w-md">
-                <div>
-                    <label for="Name" class="form-label inline-block mb-1 text-gray-700 font-bold">Meno:</label>
-                    <input type="text" class="
-                        form-control
-                        block
-                        w-full
-                        px-3
-                        py-1.5
-                        text-base
-                        font-normal
-                        text-gray-700
-                        bg-white bg-clip-padding
-                        border border-solid border-gray-300
-                        rounded
-                        transition
-                        ease-in-out
-                        m-0
-                        focus:text-gray-700 focus:bg-white focus:border-blue focus:outline-none" id="Name" placeholder="John" />
-                </div>
-                <div>
-                    <label for="Surname" class="form-label inline-block mb-1 text-gray-700 font-bold">Priezvisko:</label>
-                    <input type="text" class="
+            <div class="flex flex-row justify-center lg:justify-start">
+                <div class="flex flex-col space-y-4 mt-2 w-full max-w-md">
+                    <h1 class="text-orange font-bold">Nastavenia</h1>
+                    <div>
+                        <label for="Name" class="form-label inline-block mb-1 text-gray-700 font-bold">Meno:</label>
+                        <input type="text" class="
                             form-control
                             block
                             w-full
@@ -120,80 +102,100 @@
                             transition
                             ease-in-out
                             m-0
-                            focus:text-gray-700 focus:bg-white focus:border-blue focus:outline-none" id="Surname" placeholder="Doe" />
-                </div>
-                <div>
-                    <label for="Email" class="form-label inline-block mb-1 text-gray-700 font-bold">Email:</label>
-                    <input type="email" class="
-                        form-control
-                        block
-                        w-full
-                        px-3
-                        py-1.5
-                        text-base
-                        font-normal
-                        text-gray-700
-                        bg-white bg-clip-padding
-                        border border-solid border-gray-300
-                        rounded
-                        transition
-                        ease-in-out
-                        m-0
-                        focus:text-gray-700 focus:bg-white focus:border-blue focus:outline-none" id="Email" placeholder="j.doe@email.sk" />
-                </div>
-                <div>
-                    <label for="Password" class="form-label inline-block mb-1 text-gray-700 font-bold">Nové heslo</label>
-                    <input type="password" class="
-                        form-control
-                        block
-                        w-full
-                        px-3
-                        py-1.5
-                        text-base
-                        font-normal
-                        text-gray-700
-                        bg-white bg-clip-padding
-                        border border-solid border-gray-300
-                        rounded
-                        transition
-                        ease-in-out
-                        m-0
-                        focus:text-gray-700 focus:bg-white focus:border-blue focus:outline-none" id="Password" />
-                </div>
-                <div>
-                    <label for="PasswordCopy" class="form-label inline-block mb-1 text-gray-700 font-bold">Zopakovanie nového hesla</label>
-                    <input type="password" class="
-                        form-control
-                        block
-                        w-full
-                        px-3
-                        py-1.5
-                        text-base
-                        font-normal
-                        text-gray-700
-                        bg-white bg-clip-padding
-                        border border-solid border-gray-300
-                        rounded
-                        transition
-                        ease-in-out
-                        m-0
-                        focus:text-gray-700 focus:bg-white focus:border-blue focus:outline-none" id="PasswordCopy" />
-                </div>
-                <div class="flex flex-col space-y-3">
-                    <button onclick="ShowAlert('#SavedAlert', '#DeleteAlert')" type="button" class="px-6 py-2.5  bg-orange
-                                text-white font-medium  text-xs leading-tight
-                                uppercase rounded shadow-md
-                                hover:bg-darkBlue hover:shadow-lg
-                                transition duration-150 ease-in-out">
-                        Uložiť
-                    </button>
-                    <button onclick="ShowAlert('#DeleteAlert', '#SavedAlert')" type="button" class="px-6 py-2.5  bg-slate-300
-                                   font-medium text-xs leading-tight
-                                   uppercase  rounded shadow-md
-                                   hover:bg-slate-500 hover:shadow-lg hover:text-white
-                                   transition duration-150 ease-in-out" data-bs-dismiss="modal">
-                        Zrušiť
-                    </button>
+                            focus:text-gray-700 focus:bg-white focus:border-blue focus:outline-none" id="Name" placeholder="John" />
+                    </div>
+                    <div>
+                        <label for="Surname" class="form-label inline-block mb-1 text-gray-700 font-bold">Priezvisko:</label>
+                        <input type="text" class="
+                                form-control
+                                block
+                                w-full
+                                px-3
+                                py-1.5
+                                text-base
+                                font-normal
+                                text-gray-700
+                                bg-white bg-clip-padding
+                                border border-solid border-gray-300
+                                rounded
+                                transition
+                                ease-in-out
+                                m-0
+                                focus:text-gray-700 focus:bg-white focus:border-blue focus:outline-none" id="Surname" placeholder="Doe" />
+                    </div>
+                    <div>
+                        <label for="Email" class="form-label inline-block mb-1 text-gray-700 font-bold">Email:</label>
+                        <input type="email" class="
+                            form-control
+                            block
+                            w-full
+                            px-3
+                            py-1.5
+                            text-base
+                            font-normal
+                            text-gray-700
+                            bg-white bg-clip-padding
+                            border border-solid border-gray-300
+                            rounded
+                            transition
+                            ease-in-out
+                            m-0
+                            focus:text-gray-700 focus:bg-white focus:border-blue focus:outline-none" id="Email" placeholder="j.doe@email.sk" />
+                    </div>
+                    <div>
+                        <label for="Password" class="form-label inline-block mb-1 text-gray-700 font-bold">Nové heslo</label>
+                        <input type="password" class="
+                            form-control
+                            block
+                            w-full
+                            px-3
+                            py-1.5
+                            text-base
+                            font-normal
+                            text-gray-700
+                            bg-white bg-clip-padding
+                            border border-solid border-gray-300
+                            rounded
+                            transition
+                            ease-in-out
+                            m-0
+                            focus:text-gray-700 focus:bg-white focus:border-blue focus:outline-none" id="Password" />
+                    </div>
+                    <div>
+                        <label for="PasswordCopy" class="form-label inline-block mb-1 text-gray-700 font-bold">Zopakovanie nového hesla</label>
+                        <input type="password" class="
+                            form-control
+                            block
+                            w-full
+                            px-3
+                            py-1.5
+                            text-base
+                            font-normal
+                            text-gray-700
+                            bg-white bg-clip-padding
+                            border border-solid border-gray-300
+                            rounded
+                            transition
+                            ease-in-out
+                            m-0
+                            focus:text-gray-700 focus:bg-white focus:border-blue focus:outline-none" id="PasswordCopy" />
+                    </div>
+                    <div class="flex flex-col space-y-3">
+                        <button onclick="ShowAlert('#SavedAlert', '#DeleteAlert')" type="button" class="px-6 py-2.5  bg-orange
+                                    text-white font-medium  text-xs leading-tight
+                                    uppercase rounded shadow-md
+                                    hover:bg-darkBlue hover:shadow-lg
+                                    transition duration-150 ease-in-out">
+                            Uložiť
+                        </button>
+                        <button onclick="ShowAlert('#DeleteAlert', '#SavedAlert')" type="button" class="px-6 py-2.5  bg-slate-300
+                                       font-medium text-xs leading-tight
+                                       uppercase  rounded shadow-md
+                                       hover:bg-slate-500 hover:shadow-lg hover:text-white
+                                       transition duration-150 ease-in-out" data-bs-dismiss="modal">
+                            Zrušiť
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
