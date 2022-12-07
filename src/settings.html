@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/471d17c5c6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <title>Hi-Fi Ralley - Nastavenia</title>
+</head>
+
+<body>
+    <div class="flex flex-col lg:flex-row">
+        <div class="w-60 h-[100vh] bg-mainBlue text-white hidden lg:block">
+            <div class="w-100 flex flex-row justify-center p-2 pt-4">
+                <div class="shrink-0">
+                    <img src="https://mdbcdn.b-cdn.net/img/new/avatars/8.webp" class="rounded-full w-28" alt="Avatar">
+                </div>
+            </div>
+            <h3 class="w-full text-center font-bold mt-2 px-2">John Doe</h3>
+            <div class="w-full flex flex-row justify-center mt-4">
+                <button onclick="location.href='home.html'" class="w-[90%] transition duration-200 px-5 py-4 cursor-pointer font-normal text-base rounded-lg text-white hover:bg-mainPurple">
+                    <div class="w-full flex flex-row justify-start items-stretch">
+                        <h3 class="self-center font-extralight"><i class="fa-solid fa-house"></i></h3>
+                        <h3 class="ml-3 self-center">Home</h3>
+                    </div>
+                </button>
+            </div>
+            <div class="w-full flex flex-row justify-center mt-2">
+                <button id="HiFiBtn" onclick="location.href='hifi.html'" class="navbuttons w-[90%] transition duration-200 px-5 py-4 cursor-pointer font-normal text-base rounded-lg text-white hover:bg-mainPurple">
+                    <div class="w-full flex flex-row justify-start items-stretch">
+                        <h3 class="self-center font-extralight"><i class="fa-solid fa-person-running"></i></h3>
+                        <h3 class="ml-3 self-center">Hi-Fi Ralley</h3>
+                    </div>
+                </button>
+            </div>
+            <div class="w-full flex flex-row justify-center mt-2">
+                <button id="PeopleBtn" onclick="location.href='people.html'" class="navbuttons w-[90%] transition duration-200 px-5 py-4 cursor-pointer font-normal text-base rounded-lg text-white hover:bg-mainPurple">
+                    <div class="w-full flex flex-row justify-start items-stretch">
+                        <h3 class="self-center font-extralight"><i class="fa-solid fa-user-group"></i></h3>
+                        <h3 class="ml-3 self-center">Účastníci</h3>
+                    </div>
+                </button>
+            </div>
+            <div class="w-full flex flex-row justify-center mt-2">
+                <button id="SettingsBtn" onclick="location.href='settings.html'" class="btn-nav-active navbuttons w-[90%] transition duration-200 px-5 py-4 cursor-pointer font-normal text-base rounded-lg text-white hover:bg-mainPurple">
+                    <div class="w-full flex flex-row justify-start items-stretch">
+                        <h3 class="self-center font-extralight"><i class="fa-solid fa-gear"></i></h3>
+                        <h3 class="ml-3 self-center">Nastavenia</h3>
+                    </div>
+                </button>
+            </div>
+            <div class="w-full flex flex-row justify-center mt-2">
+                <button id="LogoutBtn" onclick="location.href='login.html'" class="navbuttons w-[90%] transition duration-200 px-5 py-4 cursor-pointer font-normal text-base rounded-lg text-white hover:bg-mainPurple">
+                    <div class="w-full flex flex-row justify-start items-stretch">
+                        <h3 class="self-center font-extralight"><i class="fa-solid fa-arrow-right-from-bracket"></i></h3>
+                        <h3 class="ml-3 self-center">Odhlásiť</h3>
+                    </div>
+                </button>
+            </div>
+        </div>
+
+        <div class="w-100 bg-mainBlue text-white block lg:hidden p-4">
+            <div class="w-100 flex flex-row justify-between">
+                <button class="transition duration-200 cursor-pointer font-normal text-sm rounded-lg text-gray-300 hover:text-black ">
+                    <img src="../images/LSTME_logo_white.svg" class="w-12" alt="LSTME logo">
+                </button>
+                <div class="flex flex-row items-center">
+                    <div class="shrink-0">
+                        <img src="https://mdbcdn.b-cdn.net/img/new/avatars/8.webp" class="rounded-full w-8" alt="Avatar">
+                    </div>
+                    <button type="button" data-bs-toggle="modal" data-bs-target="#menu" class="ml-3 flex flex-row items-center transition duration-200 cursor-pointer font-normal text-sm rounded-lg text-gray-300 hover:text-black ">
+                        <span class="material-symbols-rounded">menu</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="w-full p-4">
+            <h1 class="text-orange font-bold">Nastavenia</h1>
+            <div class="flex flex-col space-y-4 mt-2 w-full max-w-md">
+                <div>
+                    <label for="Name" class="form-label inline-block mb-1 text-gray-700 font-bold">Meno:</label>
+                    <input type="text" class="
+                        form-control
+                        block
+                        w-full
+                        px-3
+                        py-1.5
+                        text-base
+                        font-normal
+                        text-gray-700
+                        bg-white bg-clip-padding
+                        border border-solid border-gray-300
+                        rounded
+                        transition
+                        ease-in-out
+                        m-0
+                        focus:text-gray-700 focus:bg-white focus:border-blue focus:outline-none" id="Name" placeholder="John" />
+                </div>
+                <div>
+                    <label for="Surname" class="form-label inline-block mb-1 text-gray-700 font-bold">Priezvisko:</label>
+                    <input type="text" class="
+                            form-control
+                            block
+                            w-full
+                            px-3
+                            py-1.5
+                            text-base
+                            font-normal
+                            text-gray-700
+                            bg-white bg-clip-padding
+                            border border-solid border-gray-300
+                            rounded
+                            transition
+                            ease-in-out
+                            m-0
+                            focus:text-gray-700 focus:bg-white focus:border-blue focus:outline-none" id="Surname" placeholder="Doe" />
+                </div>
+                <div>
+                    <label for="Email" class="form-label inline-block mb-1 text-gray-700 font-bold">Email:</label>
+                    <input type="email" class="
+                        form-control
+                        block
+                        w-full
+                        px-3
+                        py-1.5
+                        text-base
+                        font-normal
+                        text-gray-700
+                        bg-white bg-clip-padding
+                        border border-solid border-gray-300
+                        rounded
+                        transition
+                        ease-in-out
+                        m-0
+                        focus:text-gray-700 focus:bg-white focus:border-blue focus:outline-none" id="Email" placeholder="j.doe@email.sk" />
+                </div>
+                <div>
+                    <label for="Password" class="form-label inline-block mb-1 text-gray-700 font-bold">Nové heslo</label>
+                    <input type="password" class="
+                        form-control
+                        block
+                        w-full
+                        px-3
+                        py-1.5
+                        text-base
+                        font-normal
+                        text-gray-700
+                        bg-white bg-clip-padding
+                        border border-solid border-gray-300
+                        rounded
+                        transition
+                        ease-in-out
+                        m-0
+                        focus:text-gray-700 focus:bg-white focus:border-blue focus:outline-none" id="Password" />
+                </div>
+                <div>
+                    <label for="PasswordCopy" class="form-label inline-block mb-1 text-gray-700 font-bold">Zopakovanie nového hesla</label>
+                    <input type="password" class="
+                        form-control
+                        block
+                        w-full
+                        px-3
+                        py-1.5
+                        text-base
+                        font-normal
+                        text-gray-700
+                        bg-white bg-clip-padding
+                        border border-solid border-gray-300
+                        rounded
+                        transition
+                        ease-in-out
+                        m-0
+                        focus:text-gray-700 focus:bg-white focus:border-blue focus:outline-none" id="PasswordCopy" />
+                </div>
+                <div class="flex flex-col space-y-3">
+                    <button onclick="ShowAlert('#SavedAlert', '#DeleteAlert')" type="button" class="px-6 py-2.5  bg-orange
+                                text-white font-medium  text-xs leading-tight
+                                uppercase rounded shadow-md
+                                hover:bg-darkBlue hover:shadow-lg
+                                transition duration-150 ease-in-out">
+                        Uložiť
+                    </button>
+                    <button onclick="ShowAlert('#DeleteAlert', '#SavedAlert')" type="button" class="px-6 py-2.5  bg-slate-300
+                                   font-medium text-xs leading-tight
+                                   uppercase  rounded shadow-md
+                                   hover:bg-slate-500 hover:shadow-lg hover:text-white
+                                   transition duration-150 ease-in-out" data-bs-dismiss="modal">
+                        Zrušiť
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal menu -->
+    <div class="modal fade fixed top-0 left-0 hidden w-full h-full outline-none overflow-x-hidden overflow-y-auto" id="menu" tabindex="-1" aria-labelledby="menuLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable relative w-auto pointer-events-none">
+            <div class="modal-content border-none shadow-lg relative flex flex-col w-full pointer-events-auto bg-white bg-clip-padding rounded-b-md outline-none text-current">
+                <div class="modal-body relative">
+                    <div class="flex flex-row justify-end p-4">
+                        <button type="button" class="btn-close box-content text-xl w-4 h-full p-1 font-black text-black border-none rounded-none opacity-50 focus:shadow-none focus:outline-none focus:opacity-100 hover:text-black hover:opacity-75 hover:no-underline" data-bs-dismiss="modal"
+                            aria-label="Close">X</button>
+                    </div>
+                    <button onclick="location.href='home.html'" class="w-full px-5 py-4 text-darkBlue">
+                        <div class="w-full flex flex-row justify-end items-stretch">
+                            <h3 class="self-center font-extralight"><i class="fa-solid fa-house"></i></h3>
+                            <h3 class="ml-3 self-center">Home</h3>
+                        </div>
+                    </button>
+                    <button onclick="location.href='hifi.html'" class="w-full px-5 py-4 text-darkBlue border-y-2 border-mint">
+                        <div class="w-full flex flex-row justify-end items-stretch">
+                            <h3 class="self-center font-extralight"><i class="fa-solid fa-person-running"></i></h3>
+                            <h3 class="ml-3 self-center">Hi-Fi Ralley</h3>
+                        </div>
+                    </button>
+                    <button onclick="location.href='people.html'" class="w-full px-5 py-4 text-darkBlue">
+                        <div class="w-full flex flex-row justify-end items-stretch">
+                            <h3 class="self-center font-extralight"><i class="fa-solid fa-user-group"></i></h3>
+                            <h3 class="ml-3 self-center">Účastníci</h3>
+                        </div>
+                    </button>
+                    <button onclick="location.href='settings.html'" class="w-full px-5 py-4 text-darkBlue border-y-2 border-mint">
+                        <div class="w-full flex flex-row justify-end items-stretch">
+                            <h3 class="self-center font-extralight"><i class="fa-solid fa-gear"></i></h3>
+                            <h3 class="ml-3 self-center">Nastavenia</h3>
+                        </div>
+                    </button>
+                    <button onclick="location.href='login.html'" class="w-full px-5 py-4 text-darkBlue">
+                        <div class="w-full flex flex-row justify-end items-stretch">
+                            <h3 class="self-center font-extralight"><i class="fa-solid fa-arrow-right-from-bracket"></i></h3>
+                            <h3 class="ml-3 self-center">Odhlásiť</h3>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="SavedAlert" class="alert bg-lime-100 px-4 py-2 border-l-8 border-lime-400 rounded-md text-lime-800 hidden">
+        <div class="flex flex-row items-center">
+            <i class="fa-solid fa-check mr-2"></i>
+            <h4 class="font-semibold">Uložené</h4>
+        </div>
+    </div>
+
+    <div id="DeleteAlert" class="alert bg-red-100 px-4 py-2 border-l-8 border-red-500 rounded-md text-red-800 hidden">
+        <div class=" flex flex-row items-center ">
+            <i class="fa-solid fa-xmark mr-2 "></i>
+            <h4 class="font-semibold">Zahodené</h4>
+        </div>
+    </div>
+
+    <script src="alert.js "></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js "></script>
+</body>
+
+</html>
