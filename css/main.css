@@ -1064,6 +1064,21 @@ video {
   border-color: rgb(229 231 235 / var(--tw-border-opacity));
 }
 
+.border-goldMain {
+  --tw-border-opacity: 1;
+  border-color: hsl(45 100% 50% / var(--tw-border-opacity));
+}
+
+.border-silverMain {
+  --tw-border-opacity: 1;
+  border-color: hsl(0 0% 50% / var(--tw-border-opacity));
+}
+
+.border-bronzeMain {
+  --tw-border-opacity: 1;
+  border-color: hsl(30 50% 50% / var(--tw-border-opacity));
+}
+
 .bg-black {
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
