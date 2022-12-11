@@ -32,7 +32,7 @@
                 </button>
             </div>
             <div class="w-full flex flex-row justify-center mt-2">
-                <button id="HiFiBtn" onclick="location.href='hifi.html'" class="navbuttons w-[90%] transition duration-200 px-5 py-4 cursor-pointer font-normal text-base rounded-lg text-white hover:bg-mainPurple">
+                <button id="HiFiBtn" onclick="location.href='hifi.html'" class="btn-nav-active navbuttons w-[90%] transition duration-200 px-5 py-4 cursor-pointer font-normal text-base rounded-lg text-white hover:bg-mainPurple">
                     <div class="w-full flex flex-row justify-start items-stretch">
                         <h3 class="self-center font-extralight"><i class="fa-solid fa-person-running"></i></h3>
                         <h3 class="ml-3 self-center">Hi-Fi Ralley</h3>
@@ -48,7 +48,7 @@
                 </button>
             </div>
             <div class="w-full flex flex-row justify-center mt-2">
-                <button id="SettingsBtn" onclick="location.href='settings.html'" class="btn-nav-active navbuttons w-[90%] transition duration-200 px-5 py-4 cursor-pointer font-normal text-base rounded-lg text-white hover:bg-mainPurple">
+                <button id="SettingsBtn" onclick="location.href='settings.html'" class="navbuttons w-[90%] transition duration-200 px-5 py-4 cursor-pointer font-normal text-base rounded-lg text-white hover:bg-mainPurple">
                     <div class="w-full flex flex-row justify-start items-stretch">
                         <h3 class="self-center font-extralight"><i class="fa-solid fa-gear"></i></h3>
                         <h3 class="ml-3 self-center">Nastavenia</h3>
@@ -80,40 +80,51 @@
                 </div>
             </div>
         </div>
-
         <div class="w-full p-4">
             <h1 class="text-orange font-bold">Hi-Fi Ralley</h1>
-            <div class="grid grid-cols-4 gap-4 mt-2">
-                <button class="bg-slate-200 rounded-md shadow-md shadow-slate-300 flex flex-col p-3">
-                    <div class="flex flex-col">
-                        <h2 class="text-mainPurple font-bold">2023</h2>
-                        <div class="flex flex-row justify-between items-center space-x-5 text-darkBlue">
-                            <div class="flex flex-row items-center">
-                                <i class="fa-solid fa-map-location-dot"></i>
-                                <div class="ml-2">10</div>
-                            </div>
-                            <div class="flex flex-row items-center">
-                                <i class="fa-solid fa-clock"></i>
-                                <div class="ml-2">4:12:45</div>
-                            </div>
-                        </div>
+            <div class="mt-2 grid gap-4 lg:gap-6 sm:grid-cols-3 lg:grid-cols-4">
+                <div class="w-full bg-slate-200 rounded-md shadow-md shadow-slate-300 p-4">
+                    <h1 class="text-mainPurple text-center font-bold">2023</h1>
+                    <div class="flex flex-row space-x-2 items-center text-darkBlue mt-3">
+                        <i class="fa-solid fa-map-location-dot"></i>
+                        <h4>10</h4>
                     </div>
-                </button>
-                <button class="bg-slate-200 rounded-md shadow-md shadow-slate-300 flex flex-col p-3">
-                    <div class="flex flex-col">
-                        <h2 class="text-mainPurple font-bold">2022</h2>
-                        <div class="flex flex-row justify-between items-center space-x-5 text-darkBlue">
-                            <div class="flex flex-row items-center">
-                                <i class="fa-solid fa-map-location-dot"></i>
-                                <div class="ml-2">10</div>
-                            </div>
-                            <div class="flex flex-row items-center">
-                                <i class="fa-solid fa-clock"></i>
-                                <div class="ml-2">3:12:45</div>
-                            </div>
-                        </div>
+                    <div class="flex flex-row space-x-2 items-center text-darkBlue mt-3">
+                        <i class="fa-solid fa-clock"></i>
+                        <h4>4:53:28</h4>
                     </div>
-                </button>
+                    <button onclick="location.href='hifi2023.html'" class="w-full mt-3 transition duration-200 bg-blue hover:bg-orange hover:text-darkBlue text-white px-3.5 py-1.5 rounded-lg text-sm shadow-sm hover:shadow-md font-semibold text-center">
+                        Detail
+                    </button>
+                </div>
+                <div class="w-full bg-slate-200 rounded-md shadow-md shadow-slate-300 p-4">
+                    <h1 class="text-mainPurple text-center font-bold">2022</h1>
+                    <div class="flex flex-row space-x-2 items-center text-darkBlue mt-3">
+                        <i class="fa-solid fa-map-location-dot"></i>
+                        <h4>10</h4>
+                    </div>
+                    <div class="flex flex-row space-x-2 items-center text-darkBlue mt-3">
+                        <i class="fa-solid fa-clock"></i>
+                        <h4>3:48:28</h4>
+                    </div>
+                    <div class="w-full mt-3 transition duration-200 bg-slate-400 text-white px-3.5 py-1.5 rounded-lg text-sm shadow-sm hover:shadow-md font-semibold text-center">
+                        Detail
+                    </div>
+                </div>
+                <div class="w-full bg-slate-200 rounded-md shadow-md shadow-slate-300 p-4">
+                    <h1 class="text-mainPurple text-center font-bold">2021</h1>
+                    <div class="flex flex-row space-x-2 items-center text-darkBlue mt-3">
+                        <i class="fa-solid fa-map-location-dot"></i>
+                        <h4>10</h4>
+                    </div>
+                    <div class="flex flex-row space-x-2 items-center text-darkBlue mt-3">
+                        <i class="fa-solid fa-clock"></i>
+                        <h4>5:22:54</h4>
+                    </div>
+                    <div class="w-full mt-3 transition duration-200 bg-slate-400 text-white px-3.5 py-1.5 rounded-lg text-sm shadow-sm hover:shadow-md font-semibold text-center">
+                        Detail
+                    </div>
+                </div>
             </div>
         </div>
     </div>
