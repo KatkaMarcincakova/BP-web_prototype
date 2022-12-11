@@ -32,7 +32,7 @@
                 </button>
             </div>
             <div class="w-full flex flex-row justify-center mt-2">
-                <button id="HiFiBtn" onclick="location.href='hifi.html'" class="navbuttons w-[90%] transition duration-200 px-5 py-4 cursor-pointer font-normal text-base rounded-lg text-white hover:bg-mainPurple">
+                <button id="HiFiBtn" onclick="location.href='hifi.html'" class="btn-nav-active navbuttons w-[90%] transition duration-200 px-5 py-4 cursor-pointer font-normal text-base rounded-lg text-white hover:bg-mainPurple">
                     <div class="w-full flex flex-row justify-start items-stretch">
                         <h3 class="self-center font-extralight"><i class="fa-solid fa-person-running"></i></h3>
                         <h3 class="ml-3 self-center">Hi-Fi Ralley</h3>
@@ -48,7 +48,7 @@
                 </button>
             </div>
             <div class="w-full flex flex-row justify-center mt-2">
-                <button id="SettingsBtn" onclick="location.href='settings.html'" class="btn-nav-active navbuttons w-[90%] transition duration-200 px-5 py-4 cursor-pointer font-normal text-base rounded-lg text-white hover:bg-mainPurple">
+                <button id="SettingsBtn" onclick="location.href='settings.html'" class="navbuttons w-[90%] transition duration-200 px-5 py-4 cursor-pointer font-normal text-base rounded-lg text-white hover:bg-mainPurple">
                     <div class="w-full flex flex-row justify-start items-stretch">
                         <h3 class="self-center font-extralight"><i class="fa-solid fa-gear"></i></h3>
                         <h3 class="ml-3 self-center">Nastavenia</h3>
@@ -83,7 +83,7 @@
 
         <div class="w-full p-4">
             <h1 class="text-orange font-bold">Hi-Fi Ralley 2023</h1>
-            <div class="mt-2 grid gap-5 lg:gap-7 md:grid-cols-2 lg:grid-cols-3">
+            <div class="mt-2 grid gap-4 lg:gap-6 md:grid-cols-3 lg:grid-cols-4">
                 <button class="w-full bg-slate-200 rounded-md shadow-md shadow-slate-300 px-4 py-2 space-x-2 hover:bg-yellow">
                     <h1 class="text-mainPurple"><i class="fa-solid fa-map-location-dot"></i></h1>
                     <h2 class=" text-darkBlue">Stanoviska</h2>
@@ -96,7 +96,69 @@
                     <h1 class="text-mainPurple"><i class="fa-solid fa-chart-line"></i></h1>
                     <h2 class=" text-darkBlue">Štatistika</h2>
                 </button>
+                <button onclick="location.href='people.html'" class="w-full bg-slate-200 rounded-md shadow-md shadow-slate-300 px-4 py-2 space-x-2 hover:bg-yellow">
+                    <h1 class="text-mainPurple"><i class="fa-solid fa-user-group"></i></h1>
+                    <h2 class=" text-darkBlue">Účastníci</h2>
+                </button>
             </div>
+
+            <h2 class="text-orange font-bold mt-16">Aktuálne info</h2>
+            <div class="mt-2 grid gap-4 lg:gap-6 md:grid-cols-3 lg:grid-cols-4">
+                <div class="bg-slate-200 rounded-md shadow-md shadow-slate-300 flex flex-col border-l-8 border-yellow p-3">
+                    <div class="flex flex-row items-center text-darkBlue mr-14">
+                        <h3 class="self-center font-extralight"><i class="fa-solid fa-user-group"></i></h3>
+                        <h3 class="ml-3 self-center">Účastníci</h3>
+                    </div>
+                    <div class="flex flex-row justify-between mt-3 items-center">
+                        <div>
+                            Čakajúci:
+                        </div>
+                        <div class="text-orange font-bold">
+                            3
+                        </div>
+                    </div>
+                    <div class="flex flex-row justify-between mt-1 items-center">
+                        <div>
+                            Na trati:
+                        </div>
+                        <div class="text-orange font-bold">
+                            4
+                        </div>
+                    </div>
+                    <div class="flex flex-row justify-between mt-1 items-center">
+                        <div>
+                            V cieli:
+                        </div>
+                        <div class="text-orange font-bold">
+                            5
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-slate-200 rounded-md shadow-md shadow-slate-300 flex flex-col border-l-8 border-orange p-3">
+                    <div class="flex flex-row items-center text-darkBlue mr-14">
+                        <h3 class="self-center font-extralight"><i class="fa-solid fa-map-location-dot"></i></h3>
+                        <h3 class="ml-3 self-center">Stanoviska</h3>
+                    </div>
+                    <div class="flex flex-row justify-between mt-3 items-center">
+                        <div>
+                            Najdlhšie čakanie:
+                        </div>
+                        <div class="text-orange font-bold">
+                            3
+                        </div>
+                    </div>
+                    <div class="flex flex-row justify-between mt-1 items-center">
+                        <div>
+                            Najkratšie čakanie:
+                        </div>
+                        <div class="text-orange font-bold">
+                            4
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
 
@@ -143,23 +205,7 @@
         </div>
     </div>
 
-    <div id="SavedAlert" class="alert bg-lime-100 px-4 py-2 border-l-8 border-lime-400 rounded-md text-lime-800 hidden">
-        <div class="flex flex-row items-center">
-            <i class="fa-solid fa-check mr-2"></i>
-            <h4 class="font-semibold">Uložené</h4>
-        </div>
-    </div>
-
-    <div id="DeleteAlert" class="alert bg-red-100 px-4 py-2 border-l-8 border-red-500 rounded-md text-red-800 hidden">
-        <div class=" flex flex-row items-center ">
-            <i class="fa-solid fa-xmark mr-2 "></i>
-            <h4 class="font-semibold">Zahodené</h4>
-        </div>
-    </div>
-
-    <script src="alert.js "></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js "></script>
-    <script src="toggleVisibility.js"></script>
 </body>
 
 </html>
