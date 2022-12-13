@@ -154,8 +154,9 @@
                     <h5 class="text-xl font-medium leading-normal text-gray-800" id="stanoviskoModalLabel">
                         Nové stanovisko
                     </h5>
-                    <button type="button" class="btn-close box-content text-xl w-4 h-full p-1 font-black text-black border-none rounded-none opacity-50 focus:shadow-none focus:outline-none focus:opacity-100 hover:text-black hover:opacity-75 hover:no-underline" data-bs-dismiss="modal"
-                        aria-label="Close">X</button>
+                    <button type="button" class="btn-close box-content text-xl w-4 h-full p-1 font-black text-black border-none rounded-none opacity-50 focus:shadow-none focus:outline-none focus:opacity-100 hover:text-black hover:opacity-75 hover:no-underline" onclick="MakeHidden('#stanoviskoModal')">
+                        X
+                    </button>
                 </div>
                 <div class="modal-body relative p-4">
                     <label for="name" class="form-label inline-block mb-2 text-gray-700">Názov<span class="text-red-800">*</span></label>
@@ -235,7 +236,7 @@
                                    hover:bg-slate-500 hover:shadow-lg hover:text-white
                                    focus:bg-slate-500 focus:shadow-lg focus:outline-none focus:ring-0 focus:text-white
                                    active:bg-slate-600 active:shadow-lg active:text-white
-                                   transition duration-150 ease-in-out" data-bs-dismiss="modal">
+                                   transition duration-150 ease-in-out" onclick="MakeHidden('#stanoviskoModal')">
                         Zrušiť
                     </button>
                     <button type="button" class="px-6 py-2.5  bg-blue
@@ -243,7 +244,7 @@
                                 uppercase rounded shadow-md
                                 hover:bg-darkBlue hover:shadow-lg
                                 focus:bg-darkBlue focus:shadow-lg focus:outline-none focus:ring-0
-                                transition duration-150 ease-in-out ml-1">
+                                transition duration-150 ease-in-out ml-1" onclick="MakeHidden('#stanoviskoModal')">
                         Vytvoriť
                     </button>
                 </div>
