@@ -84,7 +84,7 @@
         <div class="w-full p-4">
             <div class="flex flex-row justify-between">
                 <h1 class="text-orange font-bold">Stanoviska 2023</h1>
-                <button class="max-h-10 transition duration-200 px-4 py-0 font-semibold rounded-md text-darkBlue bg-yellow hover:text-white hover:bg-orange " type="button" data-bs-toggle="modal" data-bs-target="#stanoviskoModal">
+                <button class="max-h-10 transition duration-200 px-4 py-0 font-semibold rounded-md text-darkBlue bg-yellow hover:text-white hover:bg-orange " type="button" onclick="MakeVisible('#stanoviskoModal')">
                     <span class="inline-block"><i class="fa-solid fa-plus"></i></span>
                     <span class="hidden md:inline-block">Vytvoriť</span> 
                 </button>
@@ -147,7 +147,7 @@
 
 
     <!-- Modal - vytvorit stanovisko -->
-    <div class="modal fade fixed top-0 left-0 hidden w-full h-full outline-none overflow-x-hidden overflow-y-auto bg-black bg-opacity-40" id="stanoviskoModal" tabindex="-1" aria-labelledby="stanoviskoModalLabel" aria-hidden="true">
+    <div class="modal fade fixed top-0 left-0 hidden w-full h-full outline-none overflow-x-hidden overflow-y-auto bg-black bg-opacity-40" id="stanoviskoModal">
         <div class="modal-dialog relative max-w-lg mx-auto mt-4 pointer-events-none">
             <div class="modal-content border-none shadow-lg relative flex flex-col w-full pointer-events-auto bg-white bg-clip-padding rounded-md outline-none text-current">
                 <div class="modal-header flex flex-shrink-0 items-center justify-between p-4 border-b border-gray-200 rounded-t-md">
