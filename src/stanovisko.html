@@ -189,7 +189,7 @@
                 </div>
                 <div class="modal-body relative p-4">
                     <h3>Jára Cimrman</h3>
-                    <label for="name" class="form-label inline-block mt-4 mb-2 text-gray-700">Trvanie penalty v minútach<span class="text-red-800">*</span></label>
+                    <label for="time" class="form-label inline-block mt-4 mb-2 text-gray-700">Trvanie penalty v minútach<span class="text-red-800">*</span></label>
                     <input type="number" class="
                     form-control
                     block
@@ -205,7 +205,25 @@
                     transition
                     ease-in-out
                     m-0
-                    focus:text-gray-700 focus:bg-white focus:border-blue focus:outline-none" id="name" placeholder="5" />
+                    focus:text-gray-700 focus:bg-white focus:border-blue focus:outline-none" id="time" placeholder="5" />
+                    <label for="reason" class="form-label inline-block mt-4 mb-2 text-gray-700">Dôvod penalty<span class="text-red-800">*</span></label>
+                    <textarea class="
+                          form-control
+                          block
+                          w-full
+                          px-3
+                          py-1.5
+                          text-base
+                          font-normal
+                          text-gray-700
+                          bg-white bg-clip-padding
+                          border border-solid border-gray-300
+                          rounded
+                          transition
+                          ease-in-out
+                          m-0
+                          focus:text-gray-700 focus:bg-white focus:border-blue focus:outline-none
+                        " id="reason" rows="3" placeholder="Nechcelo sa mu / Nestihol / Náročné ..."></textarea>
 
                 </div>
                 <div class="modal-footer flex flex-shrink-0 flex-wrap items-center justify-end p-4 border-t border-gray-200 rounded-b-md">
